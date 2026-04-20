@@ -1,0 +1,9 @@
+node_modules
+dist
+.DS_Store
+*.log
+.env
+.npm
+.agents/skills/domain-expert
+AGENTS.md
+PROJECT_CONTEXT.md
