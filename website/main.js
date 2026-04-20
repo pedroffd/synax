@@ -30,7 +30,7 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-document.querySelectorAll('.glass-card, .step-card').forEach(card => {
+document.querySelectorAll('.glass-card, .step-card, .phil-item, .registry-col').forEach(card => {
     card.style.opacity = "0";
     card.style.transform = "translateY(20px)";
     card.style.transition = "all 0.6s cubic-bezier(0.4, 0, 0.2, 1)";

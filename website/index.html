@@ -28,69 +28,99 @@
     <main class="container">
         <section class="hero">
             <h1>SYNAX CLI</h1>
-            <p>Inject specialized skills into your AI agents with a single command. High-velocity neural orchestration for the sovereign web.</p>
+            <p>The ultimate bridge between code and cognition. Synax establishes a **Persistent Context** for your AI agents, ensuring every line is built with professional-grade engineering and design standards.</p>
             
             <div class="terminal-wrapper">
                 <div class="terminal-block" id="install-snippet">
                     <div>
                         <span class="prompt">></span>
-                        <span id="command-text">npx synax@latest add [skill]</span>
+                        <span id="command-text">npx synax@latest --help</span>
                     </div>
                     <button class="copy-btn" onclick="copySnippet()">Copy</button>
                 </div>
+                <p style="margin-top: 1rem; color: var(--text-dim); font-size: 0.8rem; font-family: var(--font-mono);">[ DISCOVER_CAPABILITIES ]</p>
             </div>
         </section>
 
         <section class="workflow">
-            <h2 class="section-title">Augmentation Workflow</h2>
+            <h2 class="section-title">The Sovereign Protocol</h2>
             <div class="steps-grid">
                 <div class="step-card">
+                    <div class="step-number">00</div>
+                    <h4>Discover</h4>
+                    <p>Explore all available commands, settings, and skills. Synax is designed for transparency and developer discovery.</p>
+                    <code class="mini-terminal">synax --help</code>
+                </div>
+                <div class="step-card">
                     <div class="step-number">01</div>
-                    <h4>Initialize Context</h4>
-                    <p>Establish the bridge between your codebase and AI agents. Synax bootstraps your context files and detects project frameworks.</p>
-                    <code class="mini-terminal">npx synax@latest init</code>
+                    <h4>Initialize</h4>
+                    <p>Establish the bridge. Synax bootstraps your context files (`AGENTS.md`, `PROJECT_CONTEXT.md`) and detects your stack.</p>
+                    <code class="mini-terminal">synax init</code>
                 </div>
                 <div class="step-card">
                     <div class="step-number">02</div>
-                    <h4>Inject Expertise</h4>
-                    <p>Choose from our library of specialized skills. Whether it's Next.js optimization or Security auditing, inject the persona you need.</p>
-                    <code class="mini-terminal">npx synax@latest add</code>
+                    <h4>Augment</h4>
+                    <p>Choose specialized expertise. Inject personas for architecture, security, or design directly into your agent's knowledge base.</p>
+                    <code class="mini-terminal">synax add</code>
                 </div>
                 <div class="step-card">
                     <div class="step-number">03</div>
-                    <h4>Bridge Rules</h4>
-                    <p>Consolidate your rules and skills into a single source of truth for Cursor, Claude Code, and other agentic environments.</p>
-                    <code class="mini-terminal">npx synax@latest bridge</code>
+                    <h4>Bridge</h4>
+                    <p>Consolidate and Sync. Map all skills and rules to your target environment (Cursor, Claude Code) with zero friction.</p>
+                    <code class="mini-terminal">synax bridge</code>
                 </div>
             </div>
         </section>
 
-        <section class="features">
-            <!-- Feature 1: Skill Injection -->
-            <div class="glass-card">
-                <div class="feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        <section class="philosophy">
+            <h2 class="section-title">Sovereign Engineering</h2>
+            <div class="philosophy-grid">
+                <div class="glass-card phil-item">
+                    <h3>Built for Agents</h3>
+                    <p>While generic prompts fail, Synax provides structured, domain-specific context that empowers AI to act as a Senior Lead Developer.</p>
                 </div>
-                <h3>Skill Injection</h3>
-                <p>Hot-swap capabilities directly into running agent runtimes without restarts or context loss.</p>
+                <div class="glass-card phil-item">
+                    <h3>High-Velocity Standards</h3>
+                    <p>Native integration with Husky and Commitlint ensures your projects maintain production-grade hygiene from the first commit.</p>
+                </div>
+                <div class="glass-card phil-item">
+                    <h3>Mental Freedom</h3>
+                    <p>Offload the boilerplate of context management. Focus on solving hard problems while Synax handles the environment synchronization.</p>
+                </div>
             </div>
+        </section>
 
-            <!-- Feature 2: Neural Link -->
-            <div class="glass-card">
-                <div class="feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v8"></path><path d="m16.24 7.76-1.41 1.41"></path><path d="M19 12h-5"></path><path d="m16.24 16.24-1.41-1.41"></path><path d="M12 22v-8"></path><path d="m7.76 16.24 1.41-1.41"></path><path d="M5 12h5"></path><path d="m7.76 7.76 1.41 1.41"></path></svg>
+        <section class="registry">
+            <h2 class="section-title">The Skill GLOSSARY</h2>
+            
+            <div class="registry-grid">
+                <!-- Engineers -->
+                <div class="registry-col">
+                    <div class="col-header">ENGINEERS</div>
+                    <div class="skill-item"><span>Architect</span> Architectural strategy and trade-offs.</div>
+                    <div class="skill-item"><span>Bug Hunter</span> Hyper-focused debugging and log analysis.</div>
+                    <div class="skill-item"><span>Quality & API</span> Production standards and contract auditing.</div>
+                    <div class="skill-item"><span>Security</span> STRIDE and OWASP security expert.</div>
                 </div>
-                <h3>Neural Link</h3>
-                <p>Establishing high-fidelity connections between agents, databases, and external APIs with zero friction.</p>
-            </div>
 
-            <!-- Feature 3: CLI Core -->
-            <div class="glass-card">
-                <div class="feature-icon">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"></polyline><line x1="12" y1="19" x2="20" y2="19"></line></svg>
+                <!-- Designers -->
+                <div class="registry-col">
+                    <div class="col-header">DESIGNERS</div>
+                    <div class="skill-item"><span>UI/UX Pro</span> Massive database of styles and guidelines.</div>
+                    <div class="skill-item"><span>Design System</span> Design tokens & component architecture.</div>
+                    <div class="skill-item"><span>Design MD</span> Design-to-Dev synthesis (Google Stitch).</div>
+                    <div class="skill-item"><span>Enhancer</span> Screenshot/Asset enhancement utility.</div>
                 </div>
-                <h3>CLI Core</h3>
-                <p>A minimalist, high-performance engine designed for rapid development and sovereign control.</p>
+
+                <!-- Frameworks -->
+                <div class="registry-col">
+                    <div class="col-header">FRAMEWORKS</div>
+                    <div class="skill-item"><span>Next.js</span> App Router and Server Actions specialist.</div>
+                    <div class="skill-item"><span>NestJS</span> Modular backend & TypeScript patterns.</div>
+                    <div class="skill-item"><span>Django</span> Python backend and security practices.</div>
+                    <div class="skill-item"><span>Vue.js</span> Modern frontend development (Vue 3/Nuxt).</div>
+                    <div class="skill-item"><span>Python</span> Scripting, Automation, and ML logic.</div>
+                </div>
             </div>
         </section>
     </main>
