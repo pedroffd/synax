@@ -19,7 +19,7 @@ program
 program
   .command("add")
   .description("Add a specialized AI skill to the project")
-  .argument("<skill>", "Name of the skill to add (e.g., django, vue, python)")
+  .argument("[skill]", "Name of the skill to add (e.g., django, vue, python)")
   .action(addCommand);
 
 program

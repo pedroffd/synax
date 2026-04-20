@@ -2,6 +2,7 @@ import path from "node:path";
 import axios from "axios";
 import chalk from "chalk";
 import fs from "fs-extra";
+import inquirer from "inquirer";
 import { SKILL_REGISTRY } from "../lib/registry";
 
 export async function installSkill(skillName: string, cwd: string) {
@@ -19,16 +20,64 @@ export async function installSkill(skillName: string, cwd: string) {
   await fs.writeFile(path.join(skillDir, "SKILL.md"), skillContent);
 }
 
-export async function addCommand(skillName: string) {
+export async function addCommand(skillName?: string) {
   const cwd = process.cwd();
-  console.log(chalk.blue(`\n📥 Fetching skill: ${skillName}...`));
+  let selectedSkill = skillName;
+
+  if (!selectedSkill) {
+    console.log(
+      chalk.blue("\n💡 No skill specified. Opening interactive menu..."),
+    );
+
+    const skillChoices = [
+      new inquirer.Separator("--- Engineers ---"),
+      ...Object.entries(SKILL_REGISTRY)
+        .filter(([_, entry]) => entry.category === "Engineers")
+        .map(([id, entry]) => ({
+          name: `${entry.name} - ${entry.description}`,
+          value: id,
+        })),
+
+      new inquirer.Separator("--- Designers ---"),
+      ...Object.entries(SKILL_REGISTRY)
+        .filter(([_, entry]) => entry.category === "Designers")
+        .map(([id, entry]) => ({
+          name: `${entry.name} - ${entry.description}`,
+          value: id,
+        })),
+
+      new inquirer.Separator("--- Frameworks ---"),
+      ...Object.entries(SKILL_REGISTRY)
+        .filter(([_, entry]) => entry.category === "Frameworks")
+        .map(([id, entry]) => ({
+          name: `${entry.name} - ${entry.description}`,
+          value: id,
+        })),
+    ];
+
+    const { skill } = await inquirer.prompt([
+      {
+        type: "list",
+        name: "skill",
+        message: "Select a skill to install:",
+        choices: skillChoices,
+        pageSize: 15,
+      },
+    ]);
+
+    selectedSkill = skill;
+  }
+
+  console.log(chalk.blue(`\n📥 Fetching skill: ${selectedSkill}...`));
 
   try {
-    await installSkill(skillName, cwd);
+    await installSkill(selectedSkill!, cwd);
     console.log(
-      chalk.green(`\n✅ Skill "${skillName}" installed successfully!`),
+      chalk.green(`\n✅ Skill "${selectedSkill}" installed successfully!`),
     );
-    console.log(chalk.dim(`Stored in .agents/skills/${skillName}/SKILL.md`));
+    console.log(
+      chalk.dim(`Stored in .agents/skills/${selectedSkill}/SKILL.md`),
+    );
   } catch (error) {
     console.log(
       chalk.red(

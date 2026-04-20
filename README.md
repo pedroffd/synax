@@ -33,8 +33,8 @@ synax init
 #### **Add a Specific Skill**
 Want to inject a specialized persona or framework knowledge?
 ```bash
-synax add nextjs
-synax add architect
+synax add          # Opens interactive selection menu
+synax add nextjs   # Directly installs Next.js skill
 ```
 
 #### **Audit Context**
@@ -51,16 +51,23 @@ synax bridge
 
 ---
 
-## 🛠️ Specialized Skills included
+## 🛠️ Specialized Skills Library
 
 | Category | Skill | Description |
 | :--- | :--- | :--- |
-| **Engineers** | `architect` | Focuses on strategy and design patterns |
-| **Engineers** | `bug-hunter` | Laser-focused debugging and log analysis |
-| **Engineers** | `quality` | API contracts and production standards |
-| **Engineers** | `security` | STRIDE/OWASP and security auditing |
-| **Designers** | `ui-ux-pro-max` | Comprehensive UI/UX database & recommendations |
-| **Designers** | `design-md` | Design system synthesis (Stitch) |
+| **Engineers** | `architect` | Architectural strategy and trade-offs evaluator. |
+| **Engineers** | `bug-hunter` | Laser-focused debugging and log analysis. |
+| **Engineers** | `quality` | Production standards and API contract auditor. |
+| **Engineers** | `security-engineer` | Security auditing, STRIDE and OWASP expert. |
+| **Designers** | `ui-ux-pro-max` | Comprehensive database of UI/UX guidelines. |
+| **Designers** | `ui-design-system` | Design tokens and component architecture. |
+| **Designers** | `design-md` | Design-to-Dev synthesis (Stitch). |
+| **Designers** | `image-enhancer` | utility for screenshot/asset enhancement. |
+| **Frameworks** | `nextjs` | Next.js App Router & Server Actions. |
+| **Frameworks** | `nestjs` | NestJS Modular backend patterns. |
+| **Frameworks** | `django` | Django backend and Python security. |
+| **Frameworks** | `vue` | Vue.js 3 / Nuxt frontend development. |
+| **Frameworks** | `python` | General purpose Python expertise. |
 
 ---
 
