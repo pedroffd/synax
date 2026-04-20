@@ -179,6 +179,72 @@ header {
   margin: 0 auto;
 }
 
+/* --- Workflow Section --- */
+.workflow {
+  padding: 6rem 0;
+  border-top: 1px solid var(--border-ghost);
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  color: var(--text-primary);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+.step-card {
+  position: relative;
+  padding-top: 2rem;
+}
+
+.step-number {
+  font-family: var(--font-mono);
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--bg-surface-high);
+  position: absolute;
+  top: -1.5rem;
+  left: -0.5rem;
+  z-index: -1;
+  opacity: 0.5;
+  transition: var(--transition-smooth);
+}
+
+.step-card:hover .step-number {
+  color: var(--accent-primary-dim);
+  opacity: 0.3;
+}
+
+.step-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--accent-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.step-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-bottom: 2rem;
+}
+
+.mini-terminal {
+  display: block;
+  background: var(--bg-surface-low);
+  border-left: 2px solid var(--accent-primary);
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-primary);
+}
+
 /* --- Features Section --- */
 .features {
   padding: 6rem 0;
