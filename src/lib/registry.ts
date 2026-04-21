@@ -31,6 +31,18 @@ export const SKILL_REGISTRY: Record<string, SkillEntry> = {
     category: "Engineers",
     url: "https://raw.githubusercontent.com/pedroffd/synax/main/skills/security-engineer/SKILL.md",
   },
+  serena: {
+    name: "Serena",
+    description: "Semantic coding assistant with memory and smart editing.",
+    category: "Engineers",
+    url: "https://raw.githubusercontent.com/oraios/serena/main/README.md",
+  },
+  caveman: {
+    name: "Caveman",
+    description: "Minimalist and high-speed agentic efficiency protocol.",
+    category: "Engineers",
+    url: "https://raw.githubusercontent.com/JuliusBrussee/caveman/main/skills/caveman/SKILL.md",
+  },
 
   // Designers
   "ui-ux-pro-max": {
