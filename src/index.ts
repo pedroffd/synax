@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 import { Command } from "commander";
+
+process.setMaxListeners(30);
 import { addCommand } from "./commands/add";
 import { auditCommand } from "./commands/audit";
 import { bridgeCommand } from "./commands/bridge";

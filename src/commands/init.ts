@@ -106,10 +106,11 @@ ${answers.description}
       })),
   ];
 
-  // Auto-select based on frameworks
+  // Auto-select based on frameworks + foundational skills
   const preSelectedSkills = Object.keys(SKILL_REGISTRY).filter(
     (id) =>
       answers.frameworks.includes(id) ||
+      ["serena", "caveman"].includes(id) ||
       (id === "frontend" &&
         answers.frameworks.some((f) => ["react", "vue", "nextjs"].includes(f))),
   );

@@ -93,7 +93,7 @@ export const SKILL_REGISTRY: Record<string, SkillEntry> = {
     name: "Vue.js",
     description: "Frontend development with Vue 3 / Nuxt.",
     category: "Frameworks",
-    url: "https://raw.githubusercontent.com/ssiertsema/claude-code-plugins/main/skills/vue-development/SKILL.md",
+    url: "https://raw.githubusercontent.com/SSiertsema/claude-code-plugins/main/.claude/skills/vue-development/SKILL.md",
   },
   python: {
     name: "Python",
