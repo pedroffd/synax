@@ -164,7 +164,27 @@ header {
   font-size: 5rem;
   margin-bottom: 1.5rem;
   line-height: 0.9;
-  color: var(--text-primary);
+  color: var(--accent-primary);
+  text-shadow: 
+    0 0 10px rgba(0, 255, 65, 0.4),
+    0 0 20px rgba(0, 255, 65, 0.2);
+  position: relative;
+}
+
+/* Matrix scanline effect for title */
+.hero h1::after {
+  content: "SYNAX CLI";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%);
+  background-size: 100% 4px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  pointer-events: none;
+  opacity: 0.8;
 }
 
 .hero p {
@@ -311,6 +331,50 @@ header {
   color: var(--text-primary);
   font-weight: 700;
   margin-bottom: 0.25rem;
+}
+
+/* --- Social & Contribution --- */
+.social-prompt {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 3rem;
+  border: 1px dashed var(--border-ghost);
+  border-radius: var(--radius-card);
+}
+
+.social-prompt h3 {
+  color: var(--accent-primary);
+  margin-bottom: 1rem;
+}
+
+.social-prompt p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: var(--accent-primary);
+  color: var(--bg-foundation);
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  border-radius: var(--radius-sharp);
+  transition: var(--transition-fast);
+}
+
+.btn-cta:hover {
+  background: #fff;
+  transform: scale(1.05);
+}
+
+.contribute-grid {
+  margin-top: 4rem;
+  padding: 4rem 0;
+  border-top: 1px solid var(--border-ghost);
 }
 
 /* --- Footer --- */
