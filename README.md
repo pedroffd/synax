@@ -1,5 +1,8 @@
 # Synax CLI 🚀
 
+[![Website](https://img.shields.io/badge/Website-Live-green?style=for-the-badge&logo=google-chrome)](https://pedroffd.github.io/synax/)
+[![NPM Version](https://img.shields.io/npm/v/synax-cli?style=for-the-badge&logo=npm)](https://www.npmjs.com/package/synax-cli)
+
 The ultimate CLI to initialize and manage AI-ready projects. Synax establishes a "Persistent Context" bridge between you and your AI agents (Antigravity, Cursor, Claude Code, etc.), ensuring your projects are built with professional-grade engineering and design standards.
 
 ## 🌟 Features
