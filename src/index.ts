@@ -7,7 +7,7 @@ import { initCommand } from "./commands/init";
 const program = new Command();
 
 program
-  .name("synax")
+  .name("synax-cli")
   .description("The ultimate AI-ready project initializer")
   .version("1.0.0");
 

@@ -1,4 +1,4 @@
-# Synax 🚀
+# Synax CLI 🚀
 
 The ultimate CLI to initialize and manage AI-ready projects. Synax establishes a "Persistent Context" bridge between you and your AI agents (Antigravity, Cursor, Claude Code, etc.), ensuring your projects are built with professional-grade engineering and design standards.
 
@@ -13,13 +13,17 @@ The ultimate CLI to initialize and manage AI-ready projects. Synax establishes a
 ## 🚀 Getting Started
 
 ### 1. Installation
-For now, Synax is used locally. Clone the repo and link the command:
+
+You can run Synax without installation using `npx`:
 
 ```bash
-cd synax
-npm install
-npm run build
-npm link
+npx synax-cli@latest [command]
+```
+
+Or install it globally:
+
+```bash
+npm install -g synax-cli
 ```
 
 ### 2. Usage Tutorial
@@ -27,26 +31,26 @@ npm link
 #### **Initialize a New Project**
 Run this in any new codebase to prepare it for AI. It will detect your frameworks and suggest relevant skills.
 ```bash
-synax init
+npx synax-cli@latest init
 ```
 
 #### **Add a Specific Skill**
 Want to inject a specialized persona or framework knowledge?
 ```bash
-synax add          # Opens interactive selection menu
-synax add nextjs   # Directly installs Next.js skill
+npx synax-cli@latest add          # Opens interactive selection menu
+npx synax-cli@latest add nextjs   # Directly installs Next.js skill
 ```
 
 #### **Audit Context**
 Check if your project has secrets exposed in code or if your context files are getting too large.
 ```bash
-synax audit
+npx synax-cli@latest audit
 ```
 
 #### **Sync Bridge**
 Consolidate all installed skills and rules into a single source of truth for your AI Agent.
 ```bash
-synax bridge
+npx synax-cli@latest bridge
 ```
 
 ---

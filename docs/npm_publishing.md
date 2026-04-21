@@ -1,11 +1,11 @@
 # Guide: Publishing Synax to NPM
 
-Since you already have an NPM account, follow these steps to make `synax` available to everyone. Once published, anyone can run your CLI using `npx synax@latest`.
+Since you already have an NPM account, follow these steps to make `synax-cli` available to everyone. Once published, anyone can run your CLI using `npx synax-cli@latest`.
 
 ## 1. Prepare for Launch
 
 Ensure your `package.json` is correctly set up.
-- **Name**: `synax` (Confirmed available)
+- **Name**: `synax-cli` (Confirmed available)
 - **Version**: `1.0.0` (Standard starting point)
 - **Bin**: `{"synax": "./dist/index.js"}` (Ensure this points to the built entry point)
 
@@ -35,7 +35,7 @@ npm publish
 Wait about 60 seconds, then try running your command from **any other directory** on your machine (or ask a friend!):
 
 ```bash
-npx synax@latest init
+npx synax-cli@latest init
 ```
 
 ## 5. Future Updates
@@ -48,4 +48,4 @@ When you make changes and want to push a new version:
 ---
 
 > [!TIP]
-> **NPX Caching**: Users might sometimes get a cached version. Encouraging the use of `npx synax@latest` ensures they always get your newest features and skills!
+> **NPX Caching**: Users might sometimes get a cached version. Encouraging the use of `npx synax-cli@latest` ensures they always get your newest features and skills!
