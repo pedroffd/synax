@@ -75,7 +75,7 @@ export const SKILL_REGISTRY: Record<string, SkillEntry> = {
     name: "Next.js",
     description: "App Router and Server Actions specialist.",
     category: "Frameworks",
-    url: "https://raw.githubusercontent.com/jeffallan/claude-skills/main/skills/nextjs-expert/SKILL.md",
+    url: "https://raw.githubusercontent.com/Jeffallan/claude-skills/refs/heads/main/skills/nextjs-developer/SKILL.md",
   },
   nestjs: {
     name: "NestJS",
